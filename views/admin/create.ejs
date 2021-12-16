@@ -1,0 +1,23 @@
+<%- include('../includes/head.ejs') %>
+    <!-- <link rel="stylesheet" href="/css/product.css"> -->
+    </head>
+
+    <body>
+        <%- include('../includes/navigation.ejs') %>
+
+            <main>
+                <h1>Create A Blog Page</h1>
+
+                <form class="form-control" action="/admin/<% if (editing) { %>edit-post<% } else { %>create-post<% } %>" method="post">
+                    <label for="create" id="create"><% if (editing) { %>Edit Post Below<% } else { %>Enter Blog Post Below<% } %></label><br>
+                    <textarea name="title" id="title" cols="25" rows="1" placeholder="Title here"><% if (editing) { %><%= post.title %><% } %></textarea>
+                    <textarea name="create" id="create" cols="50" rows="20" placeholder="enter post here"><% if (editing) { %><%= post.postContent %><% } %></textarea><br>
+                    <input type="hidden" name="create" value="create">
+                    <% if (editing) { %>
+                        <input type="hidden" value="<%= post._id %>" name="postId">
+                    <% } %>
+                    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                    <button class="btn" type="submit"><% if (editing) { %>Update Post<% } else { %>Post<% } %></button>
+                </form>
+            </main>
+            <%- include('../includes/end.ejs') %>

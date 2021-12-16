@@ -1,0 +1,25 @@
+pages for project
+--home
+--login page
+--user profile page
+--sign up page
+--nav list disappears on small screen
+
+PROFILE PAGE
+--contains create button for new blog post
+--list of all users post
+
+
+for csrfToken in login.ejs and signup.ejs input right before submit button.
+<!-- <input type="hidden" name="_csrf" value="<%= csrfToken %>"> -->
+
+
+database user
+-username -> dbUser
+-password -> es7L2FAaTgOMsBnE
+mongodb+srv://dbUser:es7L2FAaTgOMsBnE@cluster0.bu1ns.mongodb.net/stackUnderflow?retryWrites=true&w=majority
+
+
+stretch challenges
+--search users
+--

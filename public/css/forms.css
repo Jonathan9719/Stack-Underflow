@@ -1,0 +1,58 @@
+.form-control, .login-form {
+    max-width: 700px;
+    margin: auto;
+  }
+
+.login-form {
+  margin: 0 auto;
+  width: 350px;
+}
+
+fieldset {
+  border-radius: 10px;
+  padding: 30px;
+  width: 100%;
+}
+
+  .post-item {
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 1rem;
+  }
+
+  main h1 {
+    text-align: center;
+  }
+
+  .list {
+    margin: 0 auto;
+    text-align: left; 
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+  
+  .form-control label,
+  .form-control input,
+  .form-control textarea {
+    display: block;
+    margin-bottom: .5rem;
+    width: 100%;
+  }
+  
+  .form-control input,
+  .form-control textarea {
+    border: 1px solid #a1a1a1;
+    font: inherit;
+    border-radius: 5px;
+  }
+  
+  .form-control input:focus,
+  .form-control textarea:focus {
+    outline-color: #00695c;
+  }
+  
